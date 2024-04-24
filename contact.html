@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<title>Contact</title>
+<link
+href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+rel="stylesheet"
+/>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'poppins', sans-serif;
+    }
+    .contact{
+        position: relative;
+        min-height: 100vh;
+        padding: 50px 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color:rgb(199, 194, 194);
+        background-size: cover;
+    }
+    .contact h1{
+        font-style: bold;
+        color: #c94f4f;
+    }
+    .contact h4{
+        color: aqua;
+    }
+    .contact .content{
+        max-width: 800px;
+        text-align: center;
+    }
+    .contact .content h2{
+        font-size: 36px;
+        font-weight: 500;
+        color: #fff;
+    }
+    .contact .content p{
+        font-weight: 300;
+        color: #fff;
+    }
+    .container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .container .contactInfo{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+    .container .contactInfo .box{
+        position: relative;
+        padding: 20px 0;
+        display: flex;
+    }
+    .container .contactInfo .box .icon{
+        min-width: 35px;
+        height: 35px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        font-size: 22px;
+    }
+    .container .contactInfo .box .text{
+        display: flex;
+        margin-left: 20px;
+        font-size: 16px;
+        color: #fff;
+        flex-direction: column;
+        font-weight: 300;
+    }
+    .container .contactInfo .box  .text h3{
+        font-weight: 500;
+        color: #00bcd4;
+    }
+    .contactForm{
+        width: 40%;
+        padding: 40px;
+        background: whitesmoke;
+        border-radius: 5px;
+    }
+    .contactForm h2{
+        font-size: 30px;
+        color:red;
+        font-weight: 500;
+    }
+    .contactForm .inputbox{
+        position: relative;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .contactForm .inputbox input, 
+    .contactForm .inputbox textarea{
+        width: 100%;
+        padding: 5px 0;
+        font-size: 16px;
+        margin: 10px 0;
+        border: none;
+        border-bottom: 2px solid #333;
+        outline: none;
+        resize: none;
+    }
+    .contactForm .inputbox span{
+        position: absolute;
+        left: 0;
+        padding: 5px 0;
+        font-size: 16px;
+        margin: 10px 0;
+        pointer-events: none;
+        transition: 0.5s;
+        color: #666;
+    }
+    .contactForm .inputbox input:focus ~span,
+    .contactForm .inputbox input:valid ~span,
+    .contactForm .inputbox textarea:focus ~span,
+    .contactForm .inputbox textarea:focus ~span{
+        color: #e91e63;
+        font-size: 12px;
+        transform: translateY(-20px);
+    }
+    .contactForm .inputbox input[type="submit"]{
+        width: 100px;
+        background: #00bcd4;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        font-size: 18px;
+    }
+    @media (max-width: 991px){
+        .contact{
+            padding: 50px;
+        }
+        .container{
+            flex-direction: column;
+        }
+        .container .contactInfo{
+            margin-bottom: 40px;
+        }
+        .container .contactInfo, .contactForm
+        {
+            width:100%;
+        }
+    }
+    /*back arrow*/
+    .back-arrow {
+      cursor: pointer;
+      font-size: 24px;
+      margin: 20px;
+      font-weight: bold;
+    }
+    footer{
+    padding: 2px;
+    background: rgba(0, 0,0, 0.6);
+}
+footer p{
+    color:#fff;
+    text-align: center;
+}
+button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+   
+  
+</style>
+<body>
+    <nav>
+        <div class="nav__content">
+          <div class="logo"><a href="#">Cornelius Musembi</a></div>
+          <label for="check" class="checkbox">
+            <i class="ri-menu-line"></i>
+          </label>
+          <input type="checkbox" name="check" id="check" />
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    <section class="contact">
+            <h4>Share with me </h4>
+            <div class="container">
+                <div class="contactInfo">
+                 <div class="box">
+                    <div class="icon"><i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="text">
+                        <h3><u>Address</u></h3>
+                        <p>P.O BOX 333, <br>MASENO, <br>KISUMU-KENYA.</p>
+                     </div>
+                   </div>
+                   <div class="box">
+                    <div class="icon"><i class="fa-solid fa-mobile-alt"></i></div>
+                    <div class="text">
+                        <h3><u>Phone</u></h3>
+                        <p>+254-712-252-454,</p>
+                        <p>+254-790-397-377.</p>
+                     </div>
+                   </div>
+                   <div class="box">
+                    <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="text">
+                        <h3><u>My Email</u></h3>
+                       <p><a href="mailto:musembimutua201@gmail.com">musembimutua201@gmail.com</a></p>
+                     </div>
+                   </div>
+                </div>
+                <div class="contactForm">
+                    <form>
+                        <h2>Send message</h2>
+                        <div class="inputbox">
+                            <input type="text" id="name" name="name" required>
+                            <span>name</span>
+                        </div>
+                        <div class="inputbox">
+                            <input type="email" id="email" name="email" required>
+                            <span>Email</span>
+                        </div>
+                        <div class="inputbox">
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                            <span>Type your Message</span>
+                        </div>
+                        <div class="inputbox">
+                            <button type="button" onclick="sendEmail()">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function sendEmail() {
+          const name = document.getElementById('name').value;
+          const email = document.getElementById('email').value;
+          const message = document.getElementById('message').value;
+      
+          const subject = encodeURIComponent('Enter Your Subject');
+          const body = encodeURIComponent(`Name: ${name}%0AEmail: ${email}%0AMessage: ${message}`);
+      
+          // Use mailto to open the default email client with pre-filled data
+          window.location.href = `mailto:musembimutua201@gmail.com?subject=${subject}&body=${body}`;
+        }
+      </script>
+</body>
+</html>
